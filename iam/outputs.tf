@@ -40,17 +40,17 @@ output "policy_name" {
 # IAM IAM Users
 #============================================================#
 
-output "user_id" {
-  value       = aws_iam_user.default.0.unique_id
-  description = "Policy ID"
+output "users_id" {
+  value       = aws_iam_user.default.*.unique_id
+  description = "Users ID"
 }
 
-output "user_arn" {
-  value       = aws_iam_user.default.0.arn
-  description = "Policy ARN"
+output "users_arn" {
+  value       = aws_iam_user.default.*.arn
+  description = "Users ARN"
 }
 
-output "user_name" {
-  value       = aws_iam_user.default.0.name
-  description = "Policy name"
+output "users_name" {
+  value       = aws_iam_user.default.*.name
+  description = "Users name"
 }
