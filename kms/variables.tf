@@ -27,7 +27,7 @@ variable "deletion_window_in_days" {
 
 variable "enabled" {
   description = "Enable KMS CMK"
-  default = true
+  default = false
 }
 
 variable "enable_key_rotation" {
